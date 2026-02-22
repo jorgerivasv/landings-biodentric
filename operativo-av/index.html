@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Operativo Especial | Clínica Biodentric</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#0f1a1d] text-white">
+
+<!-- HEADER LOGO -->
+<header class="py-6 border-b border-gray-700 text-center">
+  <img src="/img/logo.webp"
+       alt="Clínica Biodentric"
+       class="mx-auto w-56 md:w-64">
+</header>
+
+<!-- HERO -->
+<section class="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-12 items-center">
+
+  <div>
+    <h2 class="text-3xl md:text-4xl font-bold mb-6">
+      ¡Te invitamos a un día especial en Clínica Biodentric junto a iFace!
+    </h2>
+
+    <p class="text-lg mb-6 text-gray-300">
+      Junto a nuestros amigos de <strong>iFace</strong>, realizaremos una jornada exclusiva
+      de evaluaciones sin costo y descuentos especiales en tratamientos de alineadores.
+      Esta es una oportunidad perfecta para ser candidato a este tratamiento cómodo,
+      invisible y moderno.
+    </p>
+
+    <p class="text-lg mb-6 text-gray-300">
+      Esto se realizará en nuestra clínica que se encuentra en el primer piso del edificio (oficina 103).
+      Tendremos especialistas del equipo dedicados para este evento.
+    </p>
+
+    <div class="bg-red-600 inline-block px-4 py-2 font-semibold rounded">
+      Fecha: Sábado 2 de agosto! (debes inscribirte más abajo)
+    </div>
+  </div>
+
+  <div>
+    <img src="/img/clinica.jpg"
+         class="rounded shadow-lg w-full">
+  </div>
+
+</section>
+
+<!-- ESPECIALIDADES -->
+<section class="bg-white py-8">
+  <div class="max-w-6xl mx-auto px-6">
+    <img src="/img/especialidades.webp"
+         class="w-full">
+  </div>
+</section>
+
+<!-- QUEREMOS AYUDARTE -->
+<section class="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-12 items-start">
+
+  <div>
+    <h2 class="text-3xl font-bold mb-6">Queremos ayudarte</h2>
+
+    <p class="text-lg mb-6 text-gray-300">
+      En este primer contacto, queremos saber más de ti y saber cómo podemos ayudar.
+      Una vez registres tus datos en el formulario coordinaremos una hora contigo.
+      De esta forma podrás conocer la clínica, te podremos evaluar y entregar toda
+      la información que necesites para tomar la decisión.
+    </p>
+
+    <img src="/img/doctor-saludo.jpg"
+         class="rounded shadow-lg w-full">
+  </div>
+
+  <!-- FORMULARIO -->
+  <div class="bg-gray-200 text-gray-800 p-8 rounded">
+
+    <form name="operativo-biodentric" method="POST" data-netlify="true" class="space-y-6">
+      <input type="hidden" name="form-name" value="operativo-biodentric" />
+
+      <div>
+        <label class="block mb-1 font-medium">Nombre*</label>
+        <input type="text" name="nombre" required class="w-full p-3 border rounded">
+      </div>
+
+      <div>
+        <label class="block mb-1 font-medium">Correo*</label>
+        <input type="email" name="email" required class="w-full p-3 border rounded">
+      </div>
+
+      <div>
+        <label class="block mb-1 font-medium">Número de teléfono*</label>
+        <input type="tel" name="telefono" required class="w-full p-3 border rounded">
+      </div>
+
+      <div>
+        <label class="block mb-1 font-medium">Comentarios adicionales (opcional)</label>
+        <textarea name="comentarios" rows="4" class="w-full p-3 border rounded"></textarea>
+      </div>
+
+      <button type="submit"
+        class="w-full bg-[#0f1a1d] text-white py-3 font-semibold hover:bg-black transition">
+        Inscribirme
+      </button>
+
+    </form>
+
+  </div>
+
+</section>
+
+<!-- TU SALUD + 6 RAZONES -->
+<section class="bg-gray-100 text-gray-800 py-20">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-start">
+
+    <!-- IMAGEN IZQUIERDA -->
+    <div>
+      <h2 class="text-3xl font-semibold mb-8 text-center md:text-left">
+        "Tu salud dental nos importa"
+      </h2>
+
+      <img src="/img/procedimiento.webp"
+           class="rounded shadow-lg w-full">
+    </div>
+
+    <!-- TEXTO DERECHA -->
+    <div>
+      <h2 class="text-3xl font-semibold text-teal-500 mb-10">
+        6 razones por la que debes asistir a la clínica si tienes dolor
+      </h2>
+
+      <ol class="list-decimal space-y-6 text-lg leading-relaxed">
+        <li>Un dentista puede identificar la causa del dolor y recomendar un tratamiento adecuado para aliviarlo de forma rápida y efectiva.</li>
+        <li>Tratar a tiempo complicaciones que podrían tornarse más graves, como infecciones, abscesos, pérdida de dientes e incluso problemas de salud general.</li>
+        <li>Tener un diagnóstico preciso y determinar la causa del dolor con precisión.</li>
+        <li>Un dentista especializado puede recomendar el tratamiento más adecuado para cada caso.</li>
+        <li>Las clínicas dentales modernas cuentan con tecnología de última generación para el diagnóstico y tratamiento del dolor dental. Esto permite procedimientos más precisos, rápidos y seguros.</li>
+        <li>Un dentista puede ofrecer atención personalizada y responder a todas las preguntas e inquietudes del paciente. Esto ayuda a reducir la ansiedad y el miedo al tratamiento.</li>
+      </ol>
+
+      <div class="mt-12">
+        <hr class="border-gray-300">
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- EQUIPO -->
+<section class="bg-[#0f1a1d] py-16 text-center">
+  <div class="max-w-6xl mx-auto px-6">
+    <img src="/img/equipo.webp"
+         class="mx-auto w-full max-w-5xl">
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-[#0b1416] text-gray-300 py-16 px-6">
+
+  <div class="max-w-6xl mx-auto">
+
+    <div class="text-center mb-10">
+      <img src="/img/logo.webp"
+           class="mx-auto w-48 opacity-90">
+    </div>
+
+    <div class="text-left text-sm leading-relaxed space-y-6">
+
+      <p>
+        <strong>Clínica Biodentric se compromete a proteger su privacidad.</strong>
+        Recopilamos información personal para brindarle nuestros servicios,
+        comunicarnos con usted y mejorar nuestro sitio web.
+        No vendemos ni alquilamos su información personal a terceros.
+        Podemos divulgar su información personal con su consentimiento,
+        para cumplir con la ley o para proteger nuestros derechos.
+        Puede optar por no recibir nuestras comunicaciones de marketing y acceder,
+        corregir o eliminar su información personal.
+      </p>
+
+      <p class="font-semibold">
+        Clínica Biodentric cumple con las leyes de privacidad aplicables,
+        incluida la Ley de Protección de Datos Personales de Chile.
+      </p>
+
+      <p class="font-semibold">
+        [Derechos de autor © Clínica Biodentric. Todos los derechos reservados.]
+      </p>
+
+    </div>
+
+    <div class="mt-10">
+      <hr class="border-gray-600">
+    </div>
+
+  </div>
+
+</footer>
+
+</body>
+</html>
