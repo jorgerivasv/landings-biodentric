@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Operativo Especial | Clínica Biodentric</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#0f1a1d] text-white">
+
+<!-- HEADER -->
+<header class="py-6 border-b border-gray-700 text-center">
+  <img src="/img/logo.webp" alt="Clínica Biodentric"
+       class="mx-auto w-56 md:w-64">
+</header>
+
+<!-- HERO -->
+<section class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-16 items-center">
+
+  <div>
+
+    <p class="text-sm uppercase tracking-wider text-gray-400 mb-3">
+      Clínica dental Biodentric
+    </p>
+
+    <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+      Operativo dental
+    </h1>
+
+    <p class="text-lg text-gray-300 mb-6 leading-relaxed">
+      Te invitamos a un diagnóstico gratuito en nuestra clínica que se encuentra en el 1er piso del edificio Antonio Varas 1705 (oficina 103), Providencia. 
+      Tendremos un día completo dedicado a la comunidad con todos los especialistas del equipo.
+    </p>
+
+    <p class="text-lg text-gray-300 mb-6 leading-relaxed">
+      Contamos con Rehabilitador Oral, Ortodoncista, Endodoncista, Periodoncista e Implantólogo para poder atender tus necesidades. 
+      Realizamos el diagnóstico y te explicamos las alternativas de tratamiento recomendado de forma personalizada.
+    </p>
+
+    <div class="inline-block bg-red-600 px-4 py-2 rounded font-semibold text-sm mb-6">
+      La fecha será el Sábado 16 de Noviembre !!
+    </div>
+
+    <p class="text-lg text-gray-300 leading-relaxed">
+      Contamos con máquina da RX para radiografías periapicales y bitewing como parte del diagnóstico gratuito.
+    </p>
+
+  </div>
+
+  <div>
+    <img src="/img/clinica.jpg"
+         class="rounded-xl shadow-2xl w-full">
+  </div>
+
+</section>
+
+<!-- ESPECIALIDADES -->
+<section class="bg-white py-10">
+  <div class="max-w-6xl mx-auto px-6">
+    <img src="/img/especialidades.webp" class="w-full">
+  </div>
+</section>
+
+<!-- QUEREMOS AYUDARTE + FORM -->
+<section class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-20 items-start">
+
+  <!-- Texto -->
+  <div class="flex flex-col">
+
+    <h2 class="text-4xl font-bold mb-6">
+      Queremos ayudarte
+    </h2>
+
+    <p class="text-lg text-gray-300 leading-relaxed mb-8">
+      En este primer contacto, queremos saber más de ti y saber cómo podemos ayudar. 
+      Una vez definida tu necesidad terapeutica, coordinaremos una hora para agendar en este operativo dental exclusivo para la comunidad. 
+      De esta forma podrás conocer la clínica, te podremos evaluar y tomar acción ante tu problemática lo antes posible.
+    </p>
+
+    <img src="/img/doctor-saludo.jpg"
+         class="rounded-xl shadow-xl w-full">
+  </div>
+
+  <!-- Formulario -->
+  <div class="bg-gray-200 text-gray-800 p-10 rounded-2xl shadow-2xl">
+
+    <h3 class="text-2xl font-semibold mb-8">
+      Reserva tu evaluación sin costo
+    </h3>
+
+    <form id="leadForm" class="space-y-6">
+
+      <div>
+        <label class="block mb-2 font-medium">Nombre*</label>
+        <input type="text" name="nombre" required
+          class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-teal-500">
+      </div>
+
+      <div>
+        <label class="block mb-2 font-medium">Correo*</label>
+        <input type="email" name="email" required
+          class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-teal-500">
+      </div>
+
+      <!-- Teléfono separado -->
+      <div>
+        <label class="block mb-2 font-medium">Número de teléfono*</label>
+
+        <div class="flex gap-3">
+          <input type="text" id="codigoPais" value="+56"
+            class="w-24 p-3 border rounded-lg text-center focus:ring-2 focus:ring-teal-500"
+            maxlength="5" required>
+
+          <input type="tel" id="numeroTelefono"
+            inputmode="numeric"
+            placeholder="912345678"
+            class="flex-1 p-3 border rounded-lg focus:ring-2 focus:ring-teal-500"
+            required>
+        </div>
+      </div>
+
+      <div>
+        <label class="block mb-2 font-medium">Comentarios adicionales (opcional)</label>
+        <textarea name="comentarios" rows="4"
+          class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-teal-500"></textarea>
+      </div>
+
+      <p class="text-sm text-gray-600">
+        Clínica Biodentric necesita la información de contacto que nos proporcionas para ponernos en contacto contigo para saber cuales son tus necesidades y coordinar citas.
+      </p>
+
+      <button type="submit"
+        class="w-full bg-[#0f1a1d] text-white py-4 font-semibold text-lg rounded-lg hover:bg-black transition">
+        Inscribirme
+      </button>
+
+    </form>
+  </div>
+
+</section>
+
+<section class="bg-[#0f1a1d] py-24">
+
+  <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-3 gap-16 items-start">
+
+    <!-- COLUMNA TEXTO -->
+    <div>
+
+      <p class="text-sm text-gray-400 mb-2">
+        Providencia
+      </p>
+
+      <h2 class="text-3xl font-bold mb-6 leading-tight">
+        Clínica dental Biodentric
+      </h2>
+
+      <p class="text-gray-300 mb-5 leading-relaxed">
+        Acá te dejamos un mapa como referencia de la ubicación de la clínica.
+      </p>
+
+      <p class="text-gray-300 mb-5 leading-relaxed">
+        Recordar que esta se encuentra ubicada en Antonio Varas 1705, Providencia (Oficina 103). A 13 minutos caminando desde el metro Inés de Suárez.
+      </p>
+
+      <p class="text-gray-300 leading-relaxed">
+        Adicional, el frontis del edificio, que se encuentra por Antonio Varas, cuenta con 4 estacionamientos subiendo el bandejon al costado interior de la vereda. 
+        También es factible estacionar en las calles laterales tales como Carlos Wilson y Emilio Delporte.
+      </p>
+
+    </div>
+
+    <!-- COLUMNA MAPA -->
+    <div class="flex justify-center">
+      <img src="/img/mapa.webp"
+           alt="Mapa ubicación Clínica Biodentric"
+           class="rounded-xl shadow-xl w-full max-w-sm">
+    </div>
+
+    <!-- COLUMNA FOTO EXTERIOR -->
+    <div class="flex justify-center">
+      <img src="/img/estacionamientos.jpg"
+           alt="Exterior Clínica Biodentric"
+           class="rounded-xl shadow-xl w-full max-w-sm">
+    </div>
+
+  </div>
+
+</section>
+
+<!-- 6 RAZONES -->
+<section class="bg-gray-100 text-gray-800 py-20">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16">
+
+    <div>
+      <h2 class="text-3xl font-semibold mb-8">
+        "Tu salud dental nos importa"
+      </h2>
+
+      <img src="/img/procedimiento.webp"
+           class="rounded shadow-lg w-full">
+    </div>
+
+    <div>
+      <h2 class="text-3xl font-semibold text-teal-600 mb-10">
+        6 razones por la que debes asistir si tienes dolor
+      </h2>
+
+      <ol class="list-decimal space-y-6 text-lg leading-relaxed">
+        <li>Identificamos la causa del dolor rápidamente.</li>
+        <li>Prevenimos complicaciones mayores.</li>
+        <li>Diagnóstico preciso con tecnología moderna.</li>
+        <li>Especialistas para cada caso.</li>
+        <li>Procedimientos seguros y eficientes.</li>
+        <li>Atención personalizada que reduce la ansiedad.</li>
+      </ol>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- EQUIPO -->
+<section class="bg-[#0f1a1d] py-20 text-center">
+  <div class="max-w-6xl mx-auto px-6">
+    <img src="/img/equipo.webp"
+         class="mx-auto w-full max-w-5xl">
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-[#0b1416] text-gray-300 py-16 px-6">
+
+  <div class="max-w-6xl mx-auto">
+
+    <div class="text-center mb-10">
+      <img src="/img/logo.webp"
+           class="mx-auto w-48 opacity-90">
+    </div>
+
+    <div class="text-sm leading-relaxed space-y-6">
+
+      <p>
+        <strong>Clínica Biodentric se compromete a proteger su privacidad.</strong>
+        Recopilamos información personal para brindarle nuestros servicios.
+      </p>
+
+      <p class="font-semibold">
+        Clínica Biodentric cumple con la Ley de Protección de Datos Personales de Chile.
+      </p>
+
+      <p class="font-semibold">
+        © Clínica Biodentric. Todos los derechos reservados.
+      </p>
+
+    </div>
+
+  </div>
+
+</footer>
+
+<!-- SCRIPT -->
+<script>
+const form = document.getElementById("leadForm");
+const codigoInput = document.getElementById("codigoPais");
+const numeroInput = document.getElementById("numeroTelefono");
+
+numeroInput.addEventListener("input", function() {
+  this.value = this.value.replace(/\D/g, "");
+});
+
+codigoInput.addEventListener("input", function() {
+  this.value = "+" + this.value.replace(/\D/g, "");
+});
+
+form.addEventListener("submit", async function (e) {
+  e.preventDefault();
+
+  const boton = form.querySelector("button[type='submit']");
+  boton.disabled = true;
+  boton.innerText = "Enviando...";
+
+  const nombre = form.nombre.value.trim();
+  const email = form.email.value.trim();
+  const codigo = codigoInput.value.trim();
+  const numero = numeroInput.value.trim();
+  const comentarios = form.comentarios.value.trim();
+
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (!nombre || !emailRegex.test(email) || numero.length < 8) {
+    alert("Por favor completa correctamente el formulario.");
+    boton.disabled = false;
+    boton.innerText = "Inscribirme";
+    return;
+  }
+
+  const telefono = (codigo + numero).replace(/\s/g, "");
+
+  const data = { nombre, email, telefono, comentarios };
+
+  try {
+    const response = await fetch("/.netlify/functions/form", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data)
+    });
+
+    if (response.ok) {
+      window.location.href = "/operativo-av-0/gracias.html";
+    } else {
+      alert("Hubo un error al enviar el formulario.");
+      boton.disabled = false;
+      boton.innerText = "Inscribirme";
+    }
+
+  } catch (error) {
+    alert("Error de conexión.");
+    boton.disabled = false;
+    boton.innerText = "Inscribirme";
+  }
+});
+</script>
+
+</body>
+</html>
