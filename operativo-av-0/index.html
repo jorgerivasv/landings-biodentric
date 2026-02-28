@@ -288,12 +288,13 @@
 const form = document.getElementById("leadForm");
 const codigoInput = document.getElementById("codigoPais");
 const numeroInput = document.getElementById("numeroTelefono");
-const especialidad = form.especialidad.value;
 
+// Solo números en teléfono
 numeroInput.addEventListener("input", function() {
   this.value = this.value.replace(/\D/g, "");
 });
 
+// Validar código país
 codigoInput.addEventListener("input", function() {
   this.value = "+" + this.value.replace(/\D/g, "");
 });
@@ -309,6 +310,7 @@ form.addEventListener("submit", async function (e) {
   const email = form.email.value.trim();
   const codigo = codigoInput.value.trim();
   const numero = numeroInput.value.trim();
+  const especialidad = form.especialidad.value; // 🔥 AQUÍ VA
   const comentarios = form.comentarios.value.trim();
 
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -322,7 +324,13 @@ form.addEventListener("submit", async function (e) {
 
   const telefono = (codigo + numero).replace(/\s/g, "");
 
-  const data = { nombre, email, telefono, especialidad, comentarios };
+  const data = {
+    nombre,
+    email,
+    telefono,
+    especialidad,
+    comentarios
+  };
 
   try {
     const response = await fetch("/.netlify/functions/form", {
