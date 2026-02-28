@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Operativo Especial | Clínica Biodentric</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#0f1a1d] text-white">
+
+<!-- HEADER LOGO -->
+<header class="py-6 border-b border-gray-700 text-center">
+  <img src="/img/logo.webp"
+       alt="Clínica Biodentric"
+       class="mx-auto w-56 md:w-64">
+</header>
+
+<!-- QUEREMOS AYUDARTE -->
+<section class="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-14 items-stretch">
+
+  <!-- Columna izquierda -->
+<div class="flex flex-col h-full">
+
+  <h2 class="text-3xl font-bold mb-6">
+    Queremos ayudarte
+  </h2>
+
+  <p class="text-lg mb-6 text-gray-300 leading-relaxed">
+    En este primer contacto, queremos saber más de ti y saber cómo podemos ayudar. Una vez definida tu necesidad terapeutica, 
+    coordinaremos una hora para agendar. De esta forma podrás conocer la clínica, te podremos evaluar y tomar acción ante tu problemática lo antes posible.
+  </p>
+
+  <div class="mt-auto">
+    <img src="/img/doctor-saludo.jpg"
+         class="rounded-xl shadow-xl w-full h-full object-cover">
+  </div>
+
+</div>
+
+  <!-- Columna derecha (FORMULARIO) -->
+  <div class="bg-gray-200 text-gray-800 p-12 rounded-2xl shadow-2xl">
+
+    <h3 class="text-xl font-semibold mb-10 text-gray-800">
+      Reserva tu evaluación sin costo
+    </h3>
+
+    <form id="leadForm" class="space-y-5">
+
+      <div>
+        <label class="block mb-2 font-medium">Nombre*</label>
+        <input type="text" name="nombre" required
+          class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500">
+      </div>
+
+      <div>
+        <label class="block mb-2 font-medium">Correo*</label>
+        <input type="email" name="email" required
+          class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500">
+      </div>
+
+      <div>
+  <label class="block mb-2 font-medium">Número de teléfono*</label>
+
+        <div class="flex gap-2">
+
+          <!-- Código país -->
+          <input 
+            type="text"
+            id="codigoPais"
+            value="+56"
+            class="w-24 p-3 border border-gray-300 rounded-lg text-center focus:outline-none focus:ring-2 focus:ring-teal-500"
+            maxlength="5"
+            required
+          >
+
+          <!-- Número -->
+          <input 
+            type="tel"
+            id="numeroTelefono"
+            inputmode="numeric"
+            placeholder="912345678"
+            class="flex-1 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
+            required
+          >
+
+        </div>
+      </div>
+
+      <div>
+        <label class="block mb-2 font-medium">Comentarios adicionales (opcional)</label>
+        <textarea name="comentarios" rows="4"
+          class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"></textarea>
+      </div>
+
+      <div class="text-sm text-gray-600 leading-relaxed">
+        Utilizaremos tus datos únicamente para contactarte y coordinar tu evaluación.
+        No compartimos tu información con terceros.
+      </div>
+
+      <button type="submit"
+        class="mt-4 w-full bg-[#0f1a1d] text-white py-4 font-semibold text-lg rounded-lg hover:bg-black transition">
+        Inscribirme
+      </button>
+
+    </form>
+  </div>
+
+</section>
+
+<!-- ESPECIALIDADES -->
+<section class="bg-white py-8">
+  <div class="max-w-6xl mx-auto px-6">
+    <img src="/img/especialidades.webp"
+         class="w-full">
+  </div>
+</section>
+
+<!-- HERO -->
+<section class="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-12 items-center">
+
+  <div>
+  <h2 class="text-3xl md:text-4xl font-bold mb-6">
+    Clínica dental Biodentric
+  </h2>
+
+  <p class="text-lg mb-6 text-gray-300">
+    Te invitamos a un diagnóstico gratuito en nuestra clínica que se encuentra en el primer piso del edificio:
+  </p>
+
+  <div class="bg-red-600 inline-block px-4 py-2 font-semibold rounded mb-6">
+    Antonio Varas 1705, oficina 103, Providencia!!
+  </div>
+
+  <p class="text-lg mb-6 text-gray-300">
+    Contamos con Rehabilitador Oral, Ortodoncista, Endodoncista, Periodoncista e Implantólogo para poder atender tus necesidades. 
+    Realizamos el diagnóstico y te explicamos las alternativas de tratamiento recomendado de forma personalizada.
+  </p>
+
+  <p class="text-lg mb-6 text-gray-300">
+    Contamos con máquina de RX para radiografías (periapicales y bitewing) como parte del diagnóstico gratuito.
+  </p>
+</div>
+
+<div>
+  <img src="/img/clinica.jpg"
+       class="rounded shadow-lg w-full">
+</div>
+
+</section>
+
+<!-- TU SALUD + 6 RAZONES -->
+<section class="bg-gray-100 text-gray-800 py-20">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-start">
+
+    <div>
+      <h2 class="text-3xl font-semibold mb-8 text-center md:text-left">
+        "Tu salud dental nos importa"
+      </h2>
+
+      <img src="/img/procedimiento.webp"
+           class="rounded shadow-lg w-full">
+    </div>
+
+    <div>
+      <h2 class="text-3xl font-semibold text-teal-500 mb-10">
+        6 razones por la que debes asistir a la clínica si tienes dolor
+      </h2>
+
+      <ol class="list-decimal space-y-6 text-lg leading-relaxed">
+        <li>Un dentista puede identificar la causa del dolor y recomendar un tratamiento adecuado para aliviarlo de forma rápida y efectiva.</li>
+        <li>Tratar a tiempo complicaciones que podrían tornarse más graves, como infecciones, abscesos, pérdida de dientes e incluso problemas de salud general.</li>
+        <li>Tener un diagnóstico preciso y determinar la causa del dolor con precisión.</li>
+        <li>Un dentista especializado puede recomendar el tratamiento más adecuado para cada caso.</li>
+        <li>Las clínicas dentales modernas cuentan con tecnología de última generación para el diagnóstico y tratamiento del dolor dental. Esto permite procedimientos más precisos, rápidos y seguros.</li>
+        <li>Un dentista puede ofrecer atención personalizada y responder a todas las preguntas e inquietudes del paciente. Esto ayuda a reducir la ansiedad y el miedo al tratamiento.</li>
+      </ol>
+
+      <div class="mt-12">
+        <hr class="border-gray-300">
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- EQUIPO -->
+<section class="bg-[#0f1a1d] py-16 text-center">
+  <div class="max-w-6xl mx-auto px-6">
+    <img src="/img/equipo.webp"
+         class="mx-auto w-full max-w-5xl">
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-[#0b1416] text-gray-300 py-16 px-6">
+
+  <div class="max-w-6xl mx-auto">
+
+    <div class="text-center mb-10">
+      <img src="/img/logo.webp"
+           class="mx-auto w-48 opacity-90">
+    </div>
+
+    <div class="text-left text-sm leading-relaxed space-y-6">
+
+      <p>
+        <strong>Clínica Biodentric se compromete a proteger su privacidad.</strong>
+        Recopilamos información personal para brindarle nuestros servicios,
+        comunicarnos con usted y mejorar nuestro sitio web.
+        No vendemos ni alquilamos su información personal a terceros.
+        Podemos divulgar su información personal con su consentimiento,
+        para cumplir con la ley o para proteger nuestros derechos.
+        Puede optar por no recibir nuestras comunicaciones de marketing y acceder,
+        corregir o eliminar su información personal.
+      </p>
+
+      <p class="font-semibold">
+        Clínica Biodentric cumple con las leyes de privacidad aplicables,
+        incluida la Ley de Protección de Datos Personales de Chile.
+      </p>
+
+      <p class="font-semibold">
+        [Derechos de autor © Clínica Biodentric. Todos los derechos reservados.]
+      </p>
+
+    </div>
+
+    <div class="mt-10">
+      <hr class="border-gray-600">
+    </div>
+
+  </div>
+
+</footer>
+
+<script>
+const form = document.getElementById("leadForm");
+const codigoInput = document.getElementById("codigoPais");
+const numeroInput = document.getElementById("numeroTelefono");
+
+// ===== SOLO NÚMEROS EN NÚMERO =====
+numeroInput.addEventListener("input", function() {
+  this.value = this.value.replace(/\D/g, "");
+});
+
+// ===== VALIDAR CÓDIGO PAÍS =====
+codigoInput.addEventListener("input", function() {
+  this.value = "+" + this.value.replace(/\D/g, "");
+});
+
+// ===== ENVÍO =====
+form.addEventListener("submit", async function (e) {
+  e.preventDefault();
+
+  const boton = form.querySelector("button[type='submit']");
+  boton.disabled = true;
+  boton.innerText = "Enviando...";
+
+  const nombre = form.nombre.value.trim();
+  const email = form.email.value.trim();
+  const codigo = codigoInput.value.trim();
+  const numero = numeroInput.value.trim();
+  const comentarios = form.comentarios.value.trim();
+
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (!nombre) {
+    alert("Por favor ingresa tu nombre.");
+    reset();
+    return;
+  }
+
+  if (!emailRegex.test(email)) {
+    alert("Por favor ingresa un correo válido.");
+    reset();
+    return;
+  }
+
+  if (numero.length < 8) {
+    alert("Ingresa un número válido.");
+    reset();
+    return;
+  }
+
+  const telefono = (codigo + numero).replace(/\s/g, "");
+
+  const data = {
+    nombre,
+    email,
+    telefono,
+    comentarios
+  };
+
+  try {
+    const response = await fetch("/.netlify/functions/form", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(data)
+    });
+
+    if (response.ok) {
+      window.location.href = "/flyer-noviembre/gracias.html";
+    } else {
+      alert("Hubo un error al enviar el formulario.");
+      reset();
+    }
+
+  } catch (error) {
+    alert("Error de conexión.");
+    reset();
+  }
+
+  function reset() {
+    boton.disabled = false;
+    boton.innerText = "Inscribirme";
+  }
+});
+</script>
+
+</body>
+</html>
