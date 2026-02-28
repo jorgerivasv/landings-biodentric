@@ -102,9 +102,31 @@
       </div>
 
       <div>
-        <label class="block mb-2 font-medium">Número de teléfono*</label>
-        <input type="tel" name="telefono" required
-          class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500">
+  <label class="block mb-2 font-medium">Número de teléfono*</label>
+
+        <div class="flex gap-2">
+
+          <!-- Código país -->
+          <input 
+            type="text"
+            id="codigoPais"
+            value="+56"
+            class="w-24 p-3 border border-gray-300 rounded-lg text-center focus:outline-none focus:ring-2 focus:ring-teal-500"
+            maxlength="5"
+            required
+          >
+
+          <!-- Número -->
+          <input 
+            type="tel"
+            id="numeroTelefono"
+            inputmode="numeric"
+            placeholder="912345678"
+            class="flex-1 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
+            required
+          >
+
+        </div>
       </div>
 
       <div>
@@ -215,33 +237,89 @@
 </footer>
 
 <script>
-  const form = document.getElementById("leadForm");
+const form = document.getElementById("leadForm");
+const codigoInput = document.getElementById("codigoPais");
+const numeroInput = document.getElementById("numeroTelefono");
 
-  form.addEventListener("submit", async function (e) {
-    e.preventDefault();
+// ===== SOLO NÚMEROS EN NÚMERO =====
+numeroInput.addEventListener("input", function() {
+  this.value = this.value.replace(/\D/g, "");
+});
 
-    const formData = new FormData(form);
-    const data = Object.fromEntries(formData.entries());
+// ===== VALIDAR CÓDIGO PAÍS =====
+codigoInput.addEventListener("input", function() {
+  this.value = "+" + this.value.replace(/\D/g, "");
+});
 
-    try {
-      const response = await fetch("/.netlify/functions/form", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(data)
-      });
+// ===== ENVÍO =====
+form.addEventListener("submit", async function (e) {
+  e.preventDefault();
 
-      if (response.ok) {
-        window.location.href = "/operativo-av/gracias.html";
-      } else {
-        alert("Hubo un error al enviar el formulario");
-      }
+  const boton = form.querySelector("button[type='submit']");
+  boton.disabled = true;
+  boton.innerText = "Enviando...";
 
-    } catch (error) {
-      alert("Error de conexión");
+  const nombre = form.nombre.value.trim();
+  const email = form.email.value.trim();
+  const codigo = codigoInput.value.trim();
+  const numero = numeroInput.value.trim();
+  const comentarios = form.comentarios.value.trim();
+
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (!nombre) {
+    alert("Por favor ingresa tu nombre.");
+    reset();
+    return;
+  }
+
+  if (!emailRegex.test(email)) {
+    alert("Por favor ingresa un correo válido.");
+    reset();
+    return;
+  }
+
+  if (numero.length < 8) {
+    alert("Ingresa un número válido.");
+    reset();
+    return;
+  }
+
+  const telefono = (codigo + numero).replace(/\s/g, "");
+
+  const data = {
+    nombre,
+    email,
+    telefono,
+    comentarios
+  };
+
+  try {
+    const response = await fetch("/.netlify/functions/form", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(data)
+    });
+
+    if (response.ok) {
+      window.location.href = "/operativo-av/gracias.html";
+    } else {
+      alert("Hubo un error al enviar el formulario.");
+      reset();
     }
-  });
+
+  } catch (error) {
+    alert("Error de conexión.");
+    reset();
+  }
+
+  function reset() {
+    boton.disabled = false;
+    boton.innerText = "Inscribirme";
+  }
+});
 </script>
 
 </body>
