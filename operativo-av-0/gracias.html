@@ -3,19 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <title>Gracias | Clínica Biodentric</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-[#0f1a1d] text-white flex items-center justify-center min-h-screen">
 
-  <div class="text-center">
-    <h1 class="text-4xl font-bold mb-6">¡Gracias por registrarte!</h1>
-    <p class="text-lg text-gray-300 mb-8">
-      Nos pondremos en contacto contigo muy pronto.
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#0f1a1d">
+
+</head>
+
+<body class="bg-[#0f1a1d] text-white min-h-screen flex items-center justify-center px-6">
+
+  <div class="max-w-3xl w-full text-center">
+
+    <!-- Título -->
+    <h1 class="text-4xl md:text-5xl font-bold mb-6 text-teal-400">
+      ¡Un paso más cerca de tu sonrisa soñada!
+    </h1>
+
+    <!-- Texto -->
+    <p class="text-lg text-gray-300 mb-12 leading-relaxed">
+      Un miembro de nuestro equipo se pondrá en contacto contigo en breve para agendar tu evaluación o entregarte más información.
+      <br class="hidden md:block">
+      Estamos ansiosos por ayudarte 😊
     </p>
-    <a href="https://biodentric.cl/"
-       class="bg-white text-black px-6 py-3 rounded font-semibold hover:bg-gray-200 transition">
-      Volver al inicio
-    </a>
+
+    <!-- Botones -->
+    <div class="flex flex-col md:flex-row gap-6 justify-center mb-16">
+
+      <!-- Botón WhatsApp -->
+      <a href="https://api.whatsapp.com/send?phone=56934525082"
+         target="_blank"
+         class="bg-green-500 hover:bg-green-600 transition px-8 py-4 rounded-lg font-semibold text-white text-lg shadow-lg">
+        💬 Escríbenos por WhatsApp
+      </a>
+
+      <!-- Botón Web -->
+      <a href="https://biodentric.cl/"
+         class="bg-white text-black hover:bg-gray-200 transition px-8 py-4 rounded-lg font-semibold text-lg shadow-lg">
+        Volver a la web
+      </a>
+
+    </div>
+
+    <!-- Ubicación -->
+    <div class="bg-[#152326] p-8 rounded-xl shadow-xl">
+
+      <h2 class="text-2xl font-semibold mb-4">
+        📍 ¿Dónde estamos ubicados?
+      </h2>
+
+      <p class="text-gray-300 mb-4 leading-relaxed">
+        Antonio Varas 1705, Oficina 103, Providencia.
+        A solo 13 minutos caminando desde Metro Inés de Suárez.
+      </p>
+
+      <a href="https://maps.google.com/?q=Antonio+Varas+1705+Providencia"
+         target="_blank"
+         class="inline-block bg-teal-500 hover:bg-teal-600 transition px-6 py-3 rounded-lg font-semibold text-white">
+        Abrir en Google Maps
+      </a>
+
+    </div>
+
   </div>
 
 </body>
